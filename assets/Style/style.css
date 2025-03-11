@@ -1,0 +1,594 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: rgb(26, 25, 25);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+}
+nav .logo {
+  color: cyan;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  margin: 0 5px;
+}
+nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  color: #111;
+  background: cyan;
+}
+nav .menu-btn i {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+@media (max-width: 1000px) {
+  nav {
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i {
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+  #click:checked ~ ul {
+    left: 0;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 20px 0;
+  }
+  nav ul li a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    background-color: cyan;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: var(--black-color);
+  }
+  #click:checked ~ ul li a {
+    margin-left: -13px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover {
+    background: none;
+    color: var(--white-color);
+    background-color: var(--dcyon-color);
+  }
+}
+#theme-toggle {
+  background: none;
+  outline: none;
+  border: none;
+}
+#theme-icon {
+  color: white;
+}
+/* section banner */
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --dark-color: rgb(85, 84, 84);
+  --cyon-color: cyan;
+  --dcyon-color: rgb(2, 160, 160);
+}
+
+.dark-mode {
+  --bg-color: rgb(26, 25, 25);
+  --text-color: #fff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.section {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.section.active {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+/* dark mode */
+.section.dark-mode .banner .row .profile .img img {
+  filter: drop-shadow(1px 10px 60px var(--cyon-color));
+}
+.section.dark-mode .banner .row .left-section .fa-brands {
+  color: var(--cyon-color);
+  border: 1px solid var(--cyon-color);
+}
+.section.dark-mode .banner .row .left-section .fa-brands:hover {
+  color: var(--dark-color);
+  border: 1px solid var(--cyon-color);
+}
+/* about */
+.section.dark-mode .about h1 span {
+  color: var(--cyon-color);
+}
+.section.dark-mode .about .row button {
+  background-color: var(--cyon-color);
+  filter: drop-shadow(1px 1px 2px var(--cyon-color));
+}
+.section.dark-mode .about .row button:hover {
+  filter: drop-shadow(1px 1px 10px var(--cyon-color));
+}
+/* skill */
+.section.dark-mode .skills .row h1 span {
+  color: var(--cyon-color);
+}
+.section.dark-mode .skills .row .front-end .skill {
+  background: var(--dark-color);
+}
+.section.dark-mode .skills .row .front-end .skill .progress {
+  background-color: var(--cyon-color);
+}
+/* project */
+.section.dark-mode .project .row h1 span {
+  color: var(--cyon-color);
+}
+.section.dark-mode .project .row .card {
+  box-shadow: none;
+}
+/* footer */
+.section.dark-mode footer {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+.section.dark-mode .btn {
+  background-color: var(--cyon-color);
+  color: var(--black-color);
+}
+
+.section.dark-mode form .btn:hover {
+  background-color: var(--dcyon-color);
+  color: var(--white-color);
+}
+/* contact */
+.section.dark-mode form {
+  background-color: var(--bg-color);
+}
+.section.dark-mode form h1 span {
+  color: var(--cyon-color);
+}
+
+/* light mode */
+section .banner {
+  padding: 90px;
+}
+section .banner .row .profile {
+  width: 100%;
+}
+section .banner .row .profile .img {
+  width: 100%;
+  img {
+    filter: drop-shadow(1px 10px 60px var(--cyon-color));
+    object-fit: cover;
+    animation: upDown 2s infinite ease-in-out;
+    width: 100%;
+  }
+}
+section .banner .row .left-section h1 {
+  font-family: "Poppins", sans-serif;
+}
+section .banner .row .left-section h1 span {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+section .banner .row .left-section .link-icon {
+  display: flex;
+  justify-content: start;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+section .banner .row .left-section .fa-brands {
+  border: 1px solid var(--black-color);
+  border-radius: 50%;
+  padding: 6px;
+  color: var(--black-color);
+  cursor: pointer;
+  width: 30px;
+}
+section .banner .row .left-section .fa-brands:hover {
+  color: var(--black-color);
+  background-color: var(--dcyon-color);
+  filter: drop-shadow(1px 1px 15px var(--cyon-color));
+}
+section .banner .row .left-section button {
+  background-color: var(--cyon-color);
+  border-radius: 20px;
+  filter: drop-shadow(1px 1px 2px var(--dcyon-color));
+}
+section .banner .row .left-section button:hover {
+  filter: drop-shadow(1px 1px 10px var(--dcyon-color));
+  color: black;
+}
+@keyframes upDown {
+  0%,
+  100% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+/* about */
+section .about {
+  padding: 80px 0 50px;
+  /* display: flex;
+  justify-content: center; */
+}
+section .about h1 span {
+  color: var(--dcyon-color);
+}
+section .about .row .profile {
+  width: 100%;
+}
+section .about .row .profile .img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  img {
+    filter: drop-shadow(1px 10px 60px var(--cyon-color));
+    object-fit: cover;
+    width: 70%;
+  }
+}
+section .about .row button {
+  background-color: var(--cyon-color);
+  border-radius: 20px;
+  filter: drop-shadow(1px 1px 2px var(--dcyon-color));
+}
+section .about .row button:hover {
+  filter: drop-shadow(1px 1px 10px var(--dcyon-color));
+  color: black;
+}
+
+/* skill */
+section .skills {
+  padding: 80px 70px 30px;
+  display: flex;
+  justify-content: center;
+}
+section .skills .row h1 span {
+  color: var(--dcyon-color);
+}
+section .skills .row .front-end {
+  margin-top: 30px;
+}
+section .skills .row .front-end .skill {
+  background: var(--dark-color);
+  padding: 5px 0 0px 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+  overflow: hidden;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+section .skills .row .front-end .skill .progress {
+  background-color: var(--dcyon-color);
+}
+section .skills .row .front-end .skill .skill-name .logo {
+  gap: 100px;
+}
+section .skills .row .front-end .skill .skill-name .logo img {
+  width: 30px;
+}
+/* project */
+section .project {
+  padding: 80px 70px 30px;
+  margin: auto;
+}
+section .project .row h1 span {
+  color: var(--dcyon-color);
+}
+section .project .row {
+  margin: auto;
+}
+section .project .row .card {
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  gap: 20px;
+  margin-top: 25px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  border: #111;
+}
+section .project .row .card img {
+  width: 100%;
+  height: 150px;
+  transition: all ease-out 0.3s;
+}
+section .project .row .card:hover img {
+  transform: scale(1.1);
+}
+
+/* contact */
+#contact {
+  padding: 80px;
+}
+section form {
+  background-color: var(--white-color);
+  padding: 50px 50px;
+  width: 60%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+section form h1 span {
+  color: var(--dcyon-color);
+}
+
+section form .container h1 {
+  font-size: 2.5rem;
+}
+
+form .form-label {
+  font-weight: bold;
+}
+
+form .form-control {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+form .btn {
+  background-color: var(--dcyon-color);
+  border: none;
+  color: var(--white-color);
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+form .btn:hover {
+  background-color: rgb(3, 127, 131);
+  color: var(--white-color);
+}
+
+/* ...existing code... */
+/* footer */
+footer {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+footer .fa-brands {
+  font-size: 15px;
+}
+footer .fa-brands:hover {
+  color: var(--cyon-color);
+}
+@media only screen and (max-width: 575.98px) {
+  nav .logo {
+    font-size: 25px;
+  }
+  /* section1 */
+  section .banner {
+    padding: 20px;
+  }
+  section .banner .row {
+    padding: 0px;
+    margin: auto;
+  }
+  section .banner .row .left-section h2 span {
+    font-size: 21px;
+  }
+  section .banner .row .left-section h1 span {
+    font-size: 30px;
+  }
+  section .banner .row .profile .img {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 70%;
+    }
+  }
+  /* about */
+
+  section .about {
+    padding-top: 80px 0;
+  }
+  /*  */
+  section .about .row {
+    margin: auto;
+  }
+  section .about .row .profile {
+    display: flex;
+    justify-content: center;
+  }
+  section .about .row .profile .img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section .about .row .profile .img img {
+    width: 70%;
+  }
+  section .about .row .about-content {
+    margin: auto;
+    margin-top: 10px;
+  }
+  section .about .row .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  section .about .row .about-content button {
+    width: 150px;
+    margin: auto;
+    margin-top: 35px;
+  }
+  /* skill*/
+  section .skills {
+    padding: 30px 0;
+  }
+  /* project */
+  section .project {
+    padding: 0px;
+  }
+  section .project .row .card img {
+    height: 100px;
+  }
+
+  /* contact */
+  #contact {
+    padding: 80px 0;
+    width: 100%;
+  }
+  section form {
+    padding: 30px;
+    width: 100%;
+  }
+}
+/* tablate */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  section .banner {
+    padding: 90px;
+  }
+  section .banner .row .profile {
+    width: 100%;
+  }
+  section .banner .row .profile .img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 85%;
+      margin-top: 40px;
+    }
+  }
+  section .banner .row .left-section .link-icon {
+    margin-bottom: 20px;
+  }
+  section .banner .row .left-section .fa-brands {
+    padding: 15px;
+    width: 55px;
+    font-size: 25px;
+  }
+  /* about */
+
+  section .about .row {
+    margin: auto;
+  }
+  section .about .row .profile {
+    display: flex;
+    justify-content: center;
+  }
+  section .about .row .profile .img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section .about .row .profile .img img {
+    width: 75%;
+  }
+  section .about .row .about-content {
+    margin: auto;
+    margin-top: 10px;
+  }
+  section .about .row .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  section .about .row .about-content button {
+    width: 150px;
+    margin: auto;
+    margin-top: 35px;
+  }
+  /* skill */
+  section .skills {
+    padding: 60px 0 40px;
+  }
+  section .skills .row .front-end {
+    margin-top: 30px;
+  }
+  /* project */
+  section .project {
+    padding: 60px 0 30px;
+  }
+  section .project .row .card img {
+    height: 100%;
+  }
+  /* contact */
+  #contact {
+    padding: 80px 0;
+    width: 100%;
+  }
+  section form {
+    padding: 30px;
+    width: 90%;
+  }
+}
