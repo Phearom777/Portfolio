@@ -68,6 +68,8 @@ input[type="checkbox"] {
 @media (max-width: 920px) {
   nav .menu-btn i {
     display: block;
+    margin-left: 120px;
+    margin-right: 0;
   }
   #click:checked ~ .menu-btn i:before {
     content: "\f00d";
@@ -225,11 +227,12 @@ section .banner .row .profile .img {
   }
 }
 section .banner .row .left-section h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 section .banner .row .left-section h1 span {
   font-size: 55px;
   font-weight: bold;
+  font-family: "Oswald", sans-serif;
 }
 
 section .banner .row .left-section .link-icon {
@@ -266,10 +269,10 @@ section .banner .row .left-section button:hover {
 @keyframes upDown {
   0%,
   100% {
-    transform: translateY(-10px);
+    transform: translateY(5px);
   }
   50% {
-    transform: translateY(-30px);
+    transform: translateY(-17px);
   }
 }
 /* about */
@@ -310,6 +313,9 @@ section .skills {
   display: flex;
   justify-content: center;
 }
+section .skills .row h1 {
+  margin-bottom: 40px;
+}
 section .skills .row h1 span {
   color: var(--dcyon-color);
 }
@@ -333,7 +339,7 @@ section .skills .row .front-end .skill .skill-name .logo {
   gap: 100px;
 }
 section .skills .row .front-end .skill .skill-name .logo img {
-  width: 30px;
+  width: 25px;
 }
 /* project */
 section .project {
@@ -437,7 +443,8 @@ footer .fa-brands:hover {
     margin: auto;
   }
   section .banner .row .left-section h2 span {
-    font-size: 21px;
+    font-size: 19px;
+    color: var(--dcyon-color);
   }
   section .banner .row .left-section h1 span {
     font-size: 30px;
@@ -455,7 +462,7 @@ footer .fa-brands:hover {
   section .about {
     padding-top: 80px 0;
   }
-  /*  */
+
   section .about .row {
     margin: auto;
   }
@@ -489,11 +496,14 @@ footer .fa-brands:hover {
   }
   /* skill*/
   section .skills {
-    padding: 30px 0;
+    padding: 80px 0 0;
+  }
+  section .skills .row h1 {
+    margin-bottom: 20px;
   }
   /* project */
   section .project {
-    padding: 0px;
+    padding: 80px 0 0;
   }
   section .project .row .card img {
     height: 100px;
@@ -501,12 +511,12 @@ footer .fa-brands:hover {
 
   /* contact */
   #contact {
-    padding: 80px 0;
+    padding: 70px 0;
     width: 100%;
   }
   section form {
     padding: 30px;
-    width: 100%;
+    width: 95%;
   }
 }
 /* tablate */

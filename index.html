@@ -38,13 +38,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <nav>
-      <div class="logo">EAV PHEAROM</div>
+      <div class="logo">Portfolio</div>
       <input type="checkbox" id="click" />
+
       <label for="click" class="menu-btn">
         <i class="fas fa-bars"></i>
       </label>
@@ -55,7 +58,7 @@
         <li><a href="#project">Project</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button id="theme-toggle" class="btn btn-outline-none btn-light">
+      <button id="theme-toggle" class="btn btn-outline-none btn-light ps-5">
         <i id="theme-icon" class="bi bi-moon-fill"></i>
       </button>
     </nav>
@@ -64,16 +67,42 @@
         <div class="row container-fluid">
           <div class="col-12 col-md-12 col-lg-8 col-xl-8">
             <div class="left-section">
-              <h1>Hello, I'm <br /><span>EAV PHEAROM</span></h1>
-              <h2>
+              <h1
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
+                Hello, I'm <br /><span
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                  >EAV PHEAROM</span
+                >
+              </h1>
+              <h2
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              >
                 I'm a
                 <span
                   class="sans-serif fw-bold rom"
                   style="letter-spacing: 2px; color: cyan"
                 ></span>
               </h2>
-              <h6>I am a Software Engineer Student</h6>
-              <div class="link-icon">
+              <h6
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="700"
+              >
+                I am a Software Engineer Student
+              </h6>
+              <div
+                class="link-icon"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="900"
+              >
                 <a
                   href="https://www.facebook.com/phearum.single.399?mibextid=LQQJ4d&mibextid=LQQJ4d"
                   ><i class="fa-brands fa-facebook-f"></i
@@ -90,7 +119,13 @@
                   ><i class="fa-brands fa-linkedin-in"></i
                 ></a>
               </div>
-              <a href="assets/Image/Cv.pdf" download="eavphearom_Cv.pdf">
+              <a
+                href="assets/Image/Cv.pdf"
+                download="eavphearom_Cv.pdf"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="1400"
+              >
                 <button type="button" class="btn mt-3 fw">
                   Download CV <i class="bi bi-download fw-bold"></i>
                 </button>
@@ -99,7 +134,7 @@
           </div>
           <div class="col-12 col-md-12 col-lg-4 col-xl-4">
             <div class="profile">
-              <div class="img">
+              <div class="img" data-aos="zoom-in" data-aos-duration="1000">
                 <img
                   class="rounded-circle image"
                   src="assets/Image/profile1.jpg"
@@ -117,7 +152,7 @@
         <div class="row container">
           <div class="col-12 col-md-12 col-lg-6 col-xl-6">
             <div class="profile">
-              <div class="img">
+              <div class="img" data-aos="zoom-in" data-aos-duration="1000">
                 <img
                   class="rounded-circle"
                   src="assets/Image/profile1.jpg"
@@ -146,26 +181,36 @@
     <section id="skill" class="section">
       <div class="skills container-fluid">
         <div class="row container">
-          <h1 class="text-center mb-5">My <span>Skills</span></h1>
+          <h1 class="text-center">My <span>Skills</span></h1>
           <div class="col-12 col-md-6 col-lg-6 col-xl-6">
             <div class="front-end text-center">
               <h3>Front-End</h3>
-              <div class="skill mt-4">
+              <div
+                class="skill mt-4"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="30"
+              >
                 <div class="skill-name d-flex justify-content-between">
                   <div class="logo">
                     <img src="assets/Image/icon/html.png" alt="" />
                     HTML5
                   </div>
                   <div class="rate text-end">
-                    <span class="text-end pe-2">80%</span>
+                    <span class="text-end pe-2">85%</span>
                   </div>
                 </div>
                 <div
                   class="progress mt-3"
-                  style="width: 80%; height: 5px"
+                  style="width: 85%; height: 5px"
                 ></div>
               </div>
-              <div class="skill mt-4">
+              <div
+                class="skill mt-4"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="80"
+              >
                 <div class="skill-name d-flex justify-content-between">
                   <div class="logo">
                     <img src="assets/Image/icon/css.png" alt="" />
@@ -180,22 +225,32 @@
                   style="width: 80%; height: 5px"
                 ></div>
               </div>
-              <div class="skill mt-4">
+              <div
+                class="skill mt-4"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="120"
+              >
                 <div class="skill-name d-flex justify-content-between">
                   <div class="logo">
                     <img src="assets/Image/icon/Js.png" alt="" />
                     JavaScript
                   </div>
                   <div class="rate text-end">
-                    <span class="text-end pe-2">70%</span>
+                    <span class="text-end pe-2">65%</span>
                   </div>
                 </div>
                 <div
                   class="progress mt-3"
-                  style="width: 70%; height: 5px"
+                  style="width: 65%; height: 5px"
                 ></div>
               </div>
-              <div class="skill mt-4">
+              <div
+                class="skill mt-4"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="140"
+              >
                 <div class="skill-name d-flex justify-content-between">
                   <div class="logo">
                     <img
@@ -214,19 +269,44 @@
                   style="width: 80%; height: 5px"
                 ></div>
               </div>
-              <div class="skill mt-4">
+              <div
+                class="skill mt-4"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="160"
+              >
                 <div class="skill-name d-flex justify-content-between">
                   <div class="logo">
                     <img src="assets/Image/icon/react.png" alt="" />
                     React Js
                   </div>
                   <div class="rate text-end">
-                    <span class="text-end pe-2">80%</span>
+                    <span class="text-end pe-2">50%</span>
                   </div>
                 </div>
                 <div
                   class="progress mt-3"
-                  style="width: 80%; height: 5px"
+                  style="width: 50%; height: 5px"
+                ></div>
+              </div>
+              <div
+                class="skill mt-4"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="170"
+              >
+                <div class="skill-name d-flex justify-content-between">
+                  <div class="logo">
+                    <img src="assets/Image/icon/jquery.png" alt="" />
+                    Jquery
+                  </div>
+                  <div class="rate text-end">
+                    <span class="text-end pe-2">50%</span>
+                  </div>
+                </div>
+                <div
+                  class="progress mt-3"
+                  style="width: 50%; height: 5px"
                 ></div>
               </div>
             </div>
@@ -234,30 +314,40 @@
           <div class="col-12 col-md-6 col-lg-6 col-xl-6">
             <div class="front-end text-center">
               <h3>Back-End</h3>
-              <div class="skill mt-4">
+              <div
+                class="skill mt-4"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="30"
+              >
                 <div class="skill-name d-flex justify-content-between">
                   <div class="logo">
                     <img
-                      style="width: 42px"
+                      style="width: 37px"
                       src="assets/Image/icon/php.png"
                       alt=""
                     />
                     PHP
                   </div>
                   <div class="rate text-end">
-                    <span class="text-end pe-2">30%</span>
+                    <span class="text-end pe-2">40%</span>
                   </div>
                 </div>
                 <div
                   class="progress mt-1"
-                  style="width: 50%; height: 5px"
+                  style="width: 40%; height: 5px"
                 ></div>
               </div>
-              <div class="skill mt-4">
+              <div
+                class="skill mt-4"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="80"
+              >
                 <div class="skill-name d-flex justify-content-between">
                   <div class="logo">
                     <img
-                      style="width: 45px"
+                      style="width: 40px"
                       src="assets/Image/icon/mysql.png"
                       alt=""
                     />
@@ -272,19 +362,29 @@
                   style="width: 80%; height: 5px"
                 ></div>
               </div>
-              <div class="skill mt-4">
+              <div
+                class="skill mt-4"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="120"
+              >
                 <div class="skill-name d-flex justify-content-between">
                   <div class="logo">
-                    <img src="assets/Image/icon/Laravel.png" alt="" />
+                    <img
+                      style="width: 20px"
+                      ;
+                      src="assets/Image/icon/Laravel.png"
+                      alt=""
+                    />
                     Laravel
                   </div>
                   <div class="rate text-end">
-                    <span class="text-end pe-2">70%</span>
+                    <span class="text-end pe-2">20%</span>
                   </div>
                 </div>
                 <div
                   class="progress mt-3"
-                  style="width: 70%; height: 5px"
+                  style="width: 20%; height: 5px"
                 ></div>
               </div>
             </div>
@@ -297,54 +397,54 @@
         <div class="row container">
           <h1 class="text-center mb-5">My <span>Projects</span></h1>
           <div class="col-6 col-md-4 col-lg-3 col-xl-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in">
               <a href="https://phearom777.github.io/Cinema/">
                 <img src="assets/Image/pr.png" alt="" />
               </a>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3 col-xl-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in">
               <a href="https://phearom777.github.io/Tube-Cafe/">
                 <img src="assets/Image/tube.png" alt="" />
               </a>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3 col-xl-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in">
               <a href="https://biu-liard.vercel.app/">
                 <img src="assets/Image/biu.png" alt="" />
               </a>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3 col-xl-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in">
               <a href="https://phearom777.github.io/Khmer-Brewery/">
                 <img src="assets/Image/khmer.png" alt="" />
               </a>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3 col-xl-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in">
               <a href="https://phearom777.github.io/Pizza-Shop.com/?">
                 <img src="assets/Image/pizza.png" alt="" />
               </a>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3 col-xl-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in">
               <a href="https://phearom777.github.io/Zando-OnlineShop/">
                 <img src="assets/Image/zando.png" alt="" />
               </a>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3 col-xl-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in">
               <img src="assets/Image/project.jpg" alt="" />
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3 col-xl-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in">
               <img src="assets/Image/project.jpg" alt="" />
             </div>
           </div>
