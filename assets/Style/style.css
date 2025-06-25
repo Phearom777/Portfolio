@@ -277,7 +277,7 @@ section .banner .row .left-section button:hover {
 }
 /* about */
 section .about {
-  padding: 80px 0 50px;
+  padding: 80px 0 50px ;
   /* display: flex;
   justify-content: center; */
 }
@@ -297,6 +297,7 @@ section .about .row .profile .img {
     width: 70%;
   }
 }
+
 section .about .row button {
   background-color: var(--cyon-color);
   border-radius: 20px;
@@ -479,15 +480,13 @@ footer .fa-brands:hover {
   section .about .row .profile .img img {
     width: 70%;
   }
-  section .about .row .about-content {
-    margin: auto;
-    margin-top: 10px;
-  }
+
   section .about .row .about-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 20px;
+    margin-top:20px;
+    margin: auto;
   }
   section .about .row .about-content button {
     width: 150px;
