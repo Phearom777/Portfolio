@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const img = document.querySelectorAll(".image");
   const navLinks = document.querySelectorAll("nav ul li a");
 
+ 
   // Enable dark mode on page load
   sections.forEach((section) => {
     section.classList.add("dark-mode");
@@ -37,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", function () {
       navLinks.forEach((navLink) => navLink.classList.remove("active"));
       this.classList.add("active");
+      this.classList.remove
     });
   });
 });

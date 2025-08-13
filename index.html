@@ -119,7 +119,7 @@
                   ><i class="fa-brands fa-linkedin-in"></i
                 ></a>
               </div>
-              <a
+              <!-- <a
                 href="assets/Image/Cv.pdf"
                 download="eavphearom_Cv.pdf"
                 data-aos="fade-up"
@@ -129,7 +129,7 @@
                 <button type="button" class="btn mt-3 fw">
                   Download CV <i class="bi bi-download fw-bold"></i>
                 </button>
-              </a>
+              </a> -->
             </div>
           </div>
           <div class="col-12 col-md-12 col-lg-4 col-xl-4">
@@ -552,4 +552,12 @@
     loop: true,
   });
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="assets/Js/script.js"></script>
+<script>
+  $(document).ready(function(){
+    $('nav ul li a').click(function(){
+      $('#click').prop('checked', false); // uncheck checkbox to close menu
+    });
+  });
+</script>
