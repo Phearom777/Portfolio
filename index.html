@@ -339,7 +339,7 @@
                   style="width: 70%; height: 5px"
                 ></div>
               </div>
-              
+
               <div
                 class="skill mt-4"
                 data-aos="fade-up"
@@ -469,9 +469,16 @@
     </section>
 
     <section class="section" id="contact">
-      <form action="">
+      <form action="https://api.web3forms.com/submit" method="POST">
         <h1 class="text-center mb-5">Contact <span>Me</span></h1>
         <div class="row">
+          <input
+            type="hidden"
+            name="access_key"
+            value="fd83178a-c568-4d82-ab39-d0084b3d4da6"
+          />
+          <input type="hidden" name="subject" value="New Portfolio Message" />
+
           <div class="col-12 col-md-12 col-lg-12">
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
@@ -480,6 +487,7 @@
                 class="form-control"
                 id="name"
                 name="name"
+                placeholder="Enter Your Name"
                 required
               />
             </div>
@@ -493,6 +501,7 @@
             class="form-control"
             id="email"
             name="email"
+            placeholder="Enter Your Email"
             required
           />
         </div>
@@ -504,9 +513,10 @@
             name="message"
             rows="4"
             required
+            placeholder="Enter Your Message"
           ></textarea>
         </div>
-        <button type="btn" class="btn">Send Message</button>
+        <button type="button" class="btn">Send Message</button>
       </form>
     </section>
     <!-- footer -->
@@ -517,7 +527,7 @@
             <div class="col-12 col-md-4">
               <h5>Contact Me</h5>
               <p>Email: eavphearom168@gmail.com</p>
-              <p>Phone: +885 96 5231 272</p>
+              <p>Phone: +855 96 5231 272</p>
             </div>
             <div class="col-12 col-md-4">
               <h5>Social Media</h5>
@@ -577,12 +587,17 @@
     loop: true,
   });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
 <script src="assets/Js/script.js"></script>
 <script>
-  $(document).ready(function(){
-    $('nav ul li a').click(function(){
-      $('#click').prop('checked', false); // uncheck checkbox to close menu
+  $(document).ready(function () {
+    $("nav ul li a").click(function () {
+      $("#click").prop("checked", false); // uncheck checkbox to close menu
     });
   });
 </script>
